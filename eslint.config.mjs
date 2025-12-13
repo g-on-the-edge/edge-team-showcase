@@ -13,6 +13,11 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  {
+    rules: {
+      '@next/next/no-css-inline': 'off',
+    },
+  },
 ]);
 
 export default eslintConfig;

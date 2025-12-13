@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Edge Team Innovation Showcase
+
+A modern, interactive web application showcasing the innovative projects and achievements of the Edge Team. Built with Next.js, TypeScript, and Tailwind CSS.
+
+## Features
+
+- 🎨 **Modern Design**: Clean, professional interface with smooth animations
+- 📱 **Responsive**: Fully responsive design that works on all devices
+- ⚡ **Fast**: Built with Next.js for optimal performance
+- 🎯 **Interactive**: Smooth scrolling transitions and project carousel
+- 🚀 **Easy to Deploy**: Ready to deploy on Vercel, Netlify, or any platform
+
+## Project Structure
+
+```
+edge-team-showcase/
+├── src/
+│   ├── app/
+│   │   ├── page.tsx          # Main page with scroll sections
+│   │   ├── layout.tsx        # Root layout
+│   │   └── globals.css       # Global styles
+│   └── components/
+│       ├── Navigation.tsx    # Top navigation bar
+│       ├── Hero.tsx         # Hero/landing section
+│       ├── Showcase.tsx     # Projects showcase section
+│       └── ProjectCard.tsx  # Individual project card
+├── public/                   # Static assets
+└── package.json
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.x or later
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository or navigate to the project directory
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+### Development
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The page will auto-reload as you edit files.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Building for Production
 
-## Learn More
+Build the application:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Start the production server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm start
+```
 
-## Deploy on Vercel
+## Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Adding Projects
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Edit [`src/components/Showcase.tsx`](src/components/Showcase.tsx) and update the `projects` array:
+
+```typescript
+const projects = [
+  {
+    id: 1,
+    title: 'Your Project Title',
+    description: 'Project description...',
+    category: 'Category Name',
+    impact: 'Key metric or achievement',
+    color: 'from-blue-500 to-cyan-500', // Tailwind gradient
+  },
+  // Add more projects...
+];
+```
+
+### Styling
+
+- Global styles: [`src/app/globals.css`](src/app/globals.css)
+- Component styles: Inline Tailwind CSS classes
+- Colors: Update gradient colors in project objects
+
+### Sections
+
+- **Hero**: [`src/components/Hero.tsx`](src/components/Hero.tsx)
+- **Showcase**: [`src/components/Showcase.tsx`](src/components/Showcase.tsx)
+- **Navigation**: [`src/components/Navigation.tsx`](src/components/Navigation.tsx)
+
+## Deployment
+
+### Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Import project in [Vercel](https://vercel.com)
+3. Deploy with one click
+
+### Other Platforms
+
+Build the static site:
+
+```bash
+npm run build
+```
+
+Deploy the `.next` folder to your hosting provider.
+
+## Technologies
+
+- [Next.js 16](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [React 19](https://react.dev/) - UI library
+
+## License
+
+MIT
+
+## Support
+
+For questions or issues, please contact the Edge Team.
