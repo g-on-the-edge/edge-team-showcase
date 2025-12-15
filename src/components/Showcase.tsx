@@ -86,7 +86,16 @@ export default function Showcase() {
 
   return (
     <section className="h-screen flex items-center justify-center relative overflow-hidden pt-20" style={{ backgroundImage: 'url(/network-dark.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="max-w-6xl mx-auto px-6 w-full">
+      {/* Emplify Health overlay image */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20">
+        <img 
+          src="/emplify_health_cover_overlay.png" 
+          alt="Emplify Health" 
+          className="h-full w-full object-contain"
+        />
+      </div>
+      
+      <div className="max-w-6xl mx-auto px-6 w-full relative z-10">
         <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
           Transforming Healthcare

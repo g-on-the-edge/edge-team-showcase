@@ -4,7 +4,9 @@ import { useState } from 'react';
 import Hero from '@/components/Hero';
 import EdgeVenturesLogos from '@/components/EdgeVenturesLogos';
 import ExploreOverlay from '@/components/ExploreOverlay';
-import Showcase from '@/components/Showcase';
+import EdgeEngage from '@/components/EdgeEngage';
+import EdgeLaunch from '@/components/EdgeLaunch';
+import EdgeVentures from '@/components/EdgeVentures';
 import PortfolioTimeline from '@/components/PortfolioTimeline';
 import ExternalTraction from '@/components/ExternalTraction';
 import Navigation from '@/components/Navigation';
@@ -25,17 +27,21 @@ export default function Home() {
       <ExploreOverlay />
 
       {/* All following sections flow naturally like a camera roll */}
+      <div id="section-1">
+        <EdgeEngage />
+      </div>
+      
       <EdgeVenturesLogos />
 
-      <div id="section-1">
-        <Showcase />
-      </div>
       <div id="section-2">
-        <PortfolioTimeline />
+        <EdgeLaunch />
       </div>
       <div id="section-3">
-        <ExternalTraction />
+        <EdgeVentures />
       </div>
+      
+      <PortfolioTimeline />
+      <ExternalTraction />
     </div>
   );
 }

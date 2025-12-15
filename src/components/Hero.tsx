@@ -5,17 +5,17 @@ export default function Hero() {
       <section
         className="fixed inset-0 z-0 flex items-center justify-center min-h-screen overflow-hidden"
         style={{
-          backgroundImage: 'url(/EdgeBackground.svg)',
+          backgroundImage: 'url(/EdgeBackgroundSkyDivingIN.svg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <div className="max-w-6xl mx-auto px-6 text-center space-y-12">
-          <div className="mb-8 inline-flex items-center justify-center">
+        <div className="max-w-6xl mx-auto px-6 text-center space-y-12 mt-[20vh]">
+          <div className="mb-8 inline-flex items-center justify-center px-4">
             <img
               src="/Gundersen_Edge_RGB_White_large_tagline.png"
               alt="GHS Edge - On the Other Side of Possible"
-              className="h-64 w-auto max-w-[80vw] scale-[2]"
+              className="h-48 md:h-64 w-auto max-w-[85vw] md:max-w-[70vw] md:scale-[1.3]"
             />
           </div>
           <div className="mt-28 animate-bounce">

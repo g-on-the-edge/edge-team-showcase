@@ -39,12 +39,11 @@ export default function EdgeVenturesLogos() {
   return (
     <section
       ref={containerRef}
-      className="relative z-50 min-h-[70vh] flex items-center justify-center px-6 py-20 text-white overflow-hidden"
+      className="relative z-10 min-h-[70vh] flex items-center justify-center px-6 py-20 text-white overflow-hidden"
       style={{ backgroundImage: 'radial-gradient(circle at top, rgba(16, 185, 129, 0.35), transparent 45%), radial-gradient(circle at 20% 40%, rgba(14, 165, 233, 0.25), transparent 40%), #03030b' }}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-[#02030b] pointer-events-none" aria-hidden="true" />
       <div className="relative w-full max-w-6xl space-y-10 text-center">
-        <p className="text-xs uppercase tracking-[0.4em] text-teal-300">Edge Ventures</p>
         <h2 className="text-3xl md:text-4xl font-semibold leading-tight text-white drop-shadow-lg">
           Companies powering Edge Ventures on the other side of possible
         </h2>
