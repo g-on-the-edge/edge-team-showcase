@@ -38,34 +38,33 @@ export default function HeroSection() {
       {/* Content */}
       <motion.div
         style={{ opacity }}
-        className="relative z-10 text-center px-6 max-w-5xl mx-auto flex flex-col items-center justify-center"
+        className="relative z-10 text-center px-6 max-w-5xl mx-auto flex flex-col items-center justify-center -mt-20"
       >
-        {/* Edge Engage Logo/Title */}
+        {/* Edge Engage Logo */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mb-6"
+          className="mb-4"
         >
-          <span className="text-[#A8D4B8] text-sm md:text-base font-medium uppercase tracking-[0.3em]">
-            Execution Method
-          </span>
+          <img
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Gundersen_Edge_RGB_wht-ENGAGE_lockup.png`}
+            alt="Edge Engage"
+            className="h-24 md:h-32 lg:h-40 w-auto"
+          />
         </motion.div>
 
-        <motion.h1
+        {/* Execution Method Text */}
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8"
+          className="mb-8"
         >
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-white/80">
-            EDGE
+          <span className="text-[#A8D4B8] text-2xl md:text-3xl lg:text-4xl font-bold uppercase tracking-wider">
+            Execution Method
           </span>
-          <br />
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#A8D4B8] via-[#20B2A4] to-[#A8D4B8]">
-            ENGAGE
-          </span>
-        </motion.h1>
+        </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
