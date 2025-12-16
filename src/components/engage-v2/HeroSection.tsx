@@ -48,7 +48,7 @@ export default function HeroSection() {
           className="mb-4"
         >
           <img
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Gundersen_Edge_RGB_wht-ENGAGE_lockup.png`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Gundersen_Edge_RGB_wht_ENGAGE_lockup.png`}
             alt="Edge Engage"
             className="h-24 md:h-32 lg:h-40 w-auto"
           />
