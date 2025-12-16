@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: '/edge-team-showcase',
+  },
 };
 
 export default nextConfig;
