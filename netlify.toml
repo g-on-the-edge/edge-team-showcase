@@ -2,6 +2,14 @@
   command = "npm run build"
   publish = "out"
 
+# Redirect root to engage-method-v2
+[[redirects]]
+  from = "/"
+  to = "/engage-method-v2"
+  status = 301
+  force = true
+
+# SPA fallback for other routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
