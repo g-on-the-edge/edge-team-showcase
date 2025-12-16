@@ -42,7 +42,7 @@ export default function FrameworkSection() {
           className="flex justify-center mb-16"
         >
           <motion.img
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Open-Narrow-Close.png`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Open_Narrow_Close.png`}
             alt="Open Narrow Close Framework"
             className="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto"
             animate={isInView ? { scale: [1, 1.02, 1] } : { scale: 1 }}
