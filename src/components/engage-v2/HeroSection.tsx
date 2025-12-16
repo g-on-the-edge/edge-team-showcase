@@ -28,7 +28,7 @@ export default function HeroSection() {
       >
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/cliff_edge.png)' }}
+          style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/cliff_edge.png)` }}
         />
         {/* Gradient overlays for depth and readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/80" />

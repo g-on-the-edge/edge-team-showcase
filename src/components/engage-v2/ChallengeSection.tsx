@@ -23,7 +23,7 @@ export default function ChallengeSection() {
       className="min-h-screen w-full py-24 px-6 flex items-center justify-center bg-[#0F1D2F] relative overflow-hidden"
     >
       {/* Background pattern */}
-      <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'url(/EdgeBackgroundSkyDivingIN.svg)', backgroundSize: 'cover' }} />
+      <div className="absolute inset-0 opacity-30" style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/EdgeBackgroundSkyDivingIN.svg)`, backgroundSize: 'cover' }} />
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section header */}
