@@ -49,14 +49,14 @@ export default function LandingHero() {
       {/* Content */}
       <motion.div
         style={{ opacity }}
-        className="relative z-10 text-center px-6 max-w-5xl mx-auto flex flex-col items-center justify-center -mt-8 md:mt-0"
+        className="relative z-10 text-center px-6 max-w-5xl mx-auto flex flex-col items-center justify-center -mt-16 md:mt-0"
       >
         {/* Edge Logo */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mb-4 md:mb-8"
+          className="mb-3 md:mb-8"
         >
           <img
             src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Gundersen_Edge_RGB_White_large_tagline.png`}
@@ -70,7 +70,7 @@ export default function LandingHero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="mb-6 md:mb-12"
+          className="mb-4 md:mb-12"
         >
           <h1 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-light text-white/80 tracking-wide">
             Transforming Healthcare Through{' '}
@@ -85,7 +85,7 @@ export default function LandingHero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4"
+          className="flex flex-col md:flex-row md:flex-wrap justify-center gap-2 sm:gap-2.5 md:gap-4 w-full max-w-xs md:max-w-none"
         >
           {buckets.map((bucket, index) => (
             <motion.button
