@@ -38,7 +38,7 @@ export default function BucketGrid() {
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
           >
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
-              Explore Our Offerings
+              Explore Edge
             </span>
           </motion.h2>
           <motion.p
