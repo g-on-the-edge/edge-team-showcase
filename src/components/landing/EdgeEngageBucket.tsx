@@ -93,7 +93,7 @@ export default function EdgeEngageBucket() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="mb-8 p-4 rounded-xl bg-white/5 border border-white/10"
+          className="mb-6 p-4 rounded-xl bg-white/5 border border-white/10"
         >
           <div className="flex items-center gap-3">
             <div className="text-3xl font-bold text-[#A8D4B8]">15,000+</div>
@@ -125,37 +125,89 @@ export default function EdgeEngageBucket() {
           </a>
         </motion.div>
 
-        {/* Execution Method Card - clickable item */}
-        <Link href="/engage-method-v2" className="block">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 0.9 }}
-            whileHover={{ scale: 1.02, x: 4 }}
-            className="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#3AACCF]/40 transition-all duration-300 cursor-pointer group/method"
-          >
-            <div className="flex items-center justify-between">
-              <div>
-                <h5 className="text-white font-semibold mb-1 group-hover/method:text-[#3AACCF] transition-colors">
-                  Execution Method
-                </h5>
-                <p className="text-white/50 text-sm">
-                  Our disruptive process to reinvent healthcare delivery
-                </p>
+        {/* Explore More - Links to sub-pages */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.9 }}
+          className="space-y-3"
+        >
+          <h4 className="text-sm font-medium text-white/40 uppercase tracking-wider mb-4">
+            Explore More
+          </h4>
+
+          {/* AI Integration Link */}
+          <Link href="/engage/ai-integration" className="block">
+            <motion.div
+              whileHover={{ scale: 1.02, x: 4 }}
+              className="p-4 rounded-xl bg-gradient-to-r from-[#A8D4B8]/10 to-[#3AACCF]/5 border border-[#A8D4B8]/20 hover:border-[#A8D4B8]/50 transition-all duration-300 cursor-pointer group/ai"
+            >
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-[#A8D4B8]/20 flex items-center justify-center group-hover/ai:bg-[#A8D4B8]/30 transition-colors">
+                    <svg className="w-5 h-5 text-[#A8D4B8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h5 className="text-white font-semibold mb-0.5 group-hover/ai:text-[#A8D4B8] transition-colors">
+                      AI Integration & Education
+                    </h5>
+                    <p className="text-white/50 text-sm">
+                      Partnering with ITDS to shape healthcare&apos;s AI future
+                    </p>
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#A8D4B8]/10 flex items-center justify-center group-hover/ai:bg-[#A8D4B8]/20 transition-colors">
+                  <svg
+                    className="w-4 h-4 text-[#A8D4B8] group-hover/ai:translate-x-0.5 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#3AACCF]/10 flex items-center justify-center group-hover/method:bg-[#3AACCF]/20 transition-colors">
-                <svg
-                  className="w-5 h-5 text-[#3AACCF] group-hover/method:translate-x-0.5 transition-transform"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
+            </motion.div>
+          </Link>
+
+          {/* Execution Method Link */}
+          <Link href="/engage-method-v2" className="block">
+            <motion.div
+              whileHover={{ scale: 1.02, x: 4 }}
+              className="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#3AACCF]/40 transition-all duration-300 cursor-pointer group/method"
+            >
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-[#3AACCF]/20 flex items-center justify-center group-hover/method:bg-[#3AACCF]/30 transition-colors">
+                    <svg className="w-5 h-5 text-[#3AACCF]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h5 className="text-white font-semibold mb-0.5 group-hover/method:text-[#3AACCF] transition-colors">
+                      Execution Method
+                    </h5>
+                    <p className="text-white/50 text-sm">
+                      Our disruptive process to reinvent healthcare delivery
+                    </p>
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#3AACCF]/10 flex items-center justify-center group-hover/method:bg-[#3AACCF]/20 transition-colors">
+                  <svg
+                    className="w-4 h-4 text-[#3AACCF] group-hover/method:translate-x-0.5 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
-            </div>
-          </motion.div>
-        </Link>
+            </motion.div>
+          </Link>
+        </motion.div>
       </div>
 
       {/* Background glow effect */}
