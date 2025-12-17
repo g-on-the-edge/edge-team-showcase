@@ -160,6 +160,36 @@ export default function AIIntegrationPage() {
               </div>
             </div>
 
+            {/* Featured Article */}
+            <div className="p-8 rounded-2xl bg-gradient-to-br from-[#A8D4B8]/10 to-[#3AACCF]/10 border border-[#A8D4B8]/30">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-[#A8D4B8]/20 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-[#A8D4B8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    Featured Reading
+                  </h3>
+                  <p className="text-white/70 mb-4 leading-relaxed">
+                    Explore the future of AI in healthcare with insights on what&apos;s coming in 2026.
+                  </p>
+                  <a
+                    href="/News/How the AI conversation will change in 2026: 10 bold predictions.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#A8D4B8]/20 text-[#A8D4B8] hover:bg-[#A8D4B8]/30 transition-colors border border-[#A8D4B8]/30"
+                  >
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    How the AI conversation will change in 2026: 10 bold predictions
+                  </a>
+                </div>
+              </div>
+            </div>
+
             {/* CTA Section */}
             <div className="p-8 rounded-2xl bg-gradient-to-br from-[#A8D4B8]/10 to-[#3AACCF]/10 border border-[#A8D4B8]/30 text-center">
               <h3 className="text-xl font-bold text-white mb-3">
