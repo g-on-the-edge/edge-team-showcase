@@ -5,7 +5,6 @@ import { useRef } from 'react';
 import EdgeEngageBucket from './EdgeEngageBucket';
 import EdgeLaunchBucket from './EdgeLaunchBucket';
 import EdgeVenturesBucket from './EdgeVenturesBucket';
-import EdgeTeamBucket from './EdgeTeamBucket';
 
 export default function BucketGrid() {
   const ref = useRef<HTMLDivElement>(null);
@@ -51,12 +50,13 @@ export default function BucketGrid() {
           </motion.p>
         </motion.div>
 
-        {/* 2x2 Grid on desktop, single column on mobile */}
+        {/* Grid: Engage spans full width on top, Launch and Ventures below */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          <EdgeEngageBucket />
+          <div className="md:col-span-2">
+            <EdgeEngageBucket />
+          </div>
           <EdgeLaunchBucket />
           <EdgeVenturesBucket />
-          <EdgeTeamBucket />
         </div>
       </div>
     </section>

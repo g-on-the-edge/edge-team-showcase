@@ -6,6 +6,7 @@ import { useScroll } from 'framer-motion';
 import LandingHero from '@/components/landing/LandingHero';
 import BucketNavigation from '@/components/landing/BucketNavigation';
 import BucketGrid from '@/components/landing/BucketGrid';
+import EdgeTeamBucket from '@/components/landing/EdgeTeamBucket';
 import LandingFooter from '@/components/landing/LandingFooter';
 
 export default function Home() {
@@ -61,6 +62,9 @@ export default function Home() {
 
       {/* Bucket grid section */}
       <BucketGrid />
+
+      {/* Edge Team full-width section */}
+      <EdgeTeamBucket />
 
       {/* Footer */}
       <LandingFooter />
