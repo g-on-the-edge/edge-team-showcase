@@ -49,19 +49,19 @@ export default function LandingHero() {
       {/* Content */}
       <motion.div
         style={{ opacity }}
-        className="relative z-10 text-center px-6 max-w-5xl mx-auto flex flex-col items-center justify-center"
+        className="relative z-10 text-center px-6 max-w-5xl mx-auto flex flex-col items-center justify-center -mt-8 md:mt-0"
       >
         {/* Edge Logo */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mb-8"
+          className="mb-4 md:mb-8"
         >
           <img
             src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Gundersen_Edge_RGB_White_large_tagline.png`}
             alt="GHS Edge - On the Other Side of Possible"
-            className="h-32 md:h-40 lg:h-48 w-auto"
+            className="h-20 sm:h-28 md:h-40 lg:h-48 w-auto"
           />
         </motion.div>
 
@@ -70,9 +70,9 @@ export default function LandingHero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="mb-12"
+          className="mb-6 md:mb-12"
         >
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-light text-white/80 tracking-wide">
+          <h1 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-light text-white/80 tracking-wide">
             Transforming Healthcare Through{' '}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#A8D4B8] via-[#20B2A4] to-[#A8D4B8] font-medium">
               Innovation
@@ -85,7 +85,7 @@ export default function LandingHero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="flex flex-wrap justify-center gap-4"
+          className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4"
         >
           {buckets.map((bucket, index) => (
             <motion.button
@@ -96,7 +96,7 @@ export default function LandingHero() {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => scrollToSection(bucket.id)}
-              className="px-6 py-3 rounded-xl transition-all duration-300"
+              className="px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg md:rounded-xl transition-all duration-300"
               style={{
                 backgroundColor: `${bucket.color}15`,
                 border: `1px solid ${bucket.color}40`,
@@ -110,7 +110,7 @@ export default function LandingHero() {
                 e.currentTarget.style.borderColor = `${bucket.color}40`;
               }}
             >
-              <span className="text-white font-semibold text-sm uppercase tracking-wider">
+              <span className="text-white font-semibold text-xs sm:text-sm uppercase tracking-wide sm:tracking-wider">
                 {bucket.name}
               </span>
             </motion.button>
