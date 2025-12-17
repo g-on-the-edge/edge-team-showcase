@@ -1933,7 +1933,7 @@ function ScrollHijackedHero({
         className="relative z-10 text-center px-6 max-w-4xl mx-auto"
       >
         <img
-          src="/Gundersen_Edge_RGB_wht-ENGAGE_lockup.png"
+          src="/logos/Gundersen_Edge_RGB_wht-ENGAGE_lockup.png"
           alt="Edge Engage"
           className="h-24 md:h-30 w-auto mx-auto mb-8"
         />

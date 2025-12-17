@@ -9,7 +9,7 @@ export default function Navigation({ currentSection, setCurrentSection }: Naviga
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between text-white">
         <div className="flex items-center flex-shrink-0">
           <img 
-            src="/Gundersen_Edge_E_RGB_Red.png" 
+            src="/logos/Gundersen_Edge_E_RGB_Red.png" 
             alt="GHS Edge" 
             className="h-8 md:h-12 w-auto"
           />

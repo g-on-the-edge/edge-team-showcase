@@ -18,7 +18,7 @@ export default function BucketGrid() {
     >
       {/* Background subtle texture */}
       <div className="absolute inset-0 opacity-30" style={{
-        backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/EdgeBackgroundSkyDivingIN.svg)`,
+        backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/backgrounds/EdgeBackgroundSkyDivingIN.svg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }} />

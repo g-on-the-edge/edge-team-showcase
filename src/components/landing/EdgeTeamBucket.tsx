@@ -29,7 +29,7 @@ export default function EdgeTeamBucket() {
           className="mb-4"
         >
           <img
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Gundersen_Edge_E_RGB_White.png`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logos/Gundersen_Edge_E_RGB_White.png`}
             alt="Edge Team"
             className="h-16 md:h-20 w-auto"
           />

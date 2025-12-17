@@ -28,7 +28,7 @@ export default function HeroSection() {
       >
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/cliff_edge.png)` }}
+          style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/backgrounds/cliff_edge.png)` }}
         />
         {/* Gradient overlays for depth and readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/80" />
@@ -48,7 +48,7 @@ export default function HeroSection() {
           className="mb-4"
         >
           <img
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Gundersen_Edge_RGB_wht_ENGAGE_lockup.png`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logos/Gundersen_Edge_RGB_wht_ENGAGE_lockup.png`}
             alt="Edge Engage"
             className="h-24 md:h-32 lg:h-40 w-auto"
           />

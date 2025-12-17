@@ -34,7 +34,7 @@ export default function BucketNavigation({ show, active }: BucketNavigationProps
           className="flex items-center gap-2 hover:opacity-80 transition-opacity"
         >
           <img
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Gundersen_Edge_E_RGB_Red.png`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logos/Gundersen_Edge_E_RGB_Red.png`}
             alt="Edge"
             className="h-8 w-auto"
           />

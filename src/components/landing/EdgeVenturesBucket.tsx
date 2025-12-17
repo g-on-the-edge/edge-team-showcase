@@ -29,7 +29,7 @@ export default function EdgeVenturesBucket() {
           className="mb-6"
         >
           <img
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Gundersen_Edge_RGB_wht_VENTURES_lockup.png`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logos/Gundersen_Edge_RGB_wht_VENTURES_lockup.png`}
             alt="Edge Ventures"
             className="h-14 md:h-16 w-auto"
           />

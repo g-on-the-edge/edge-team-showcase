@@ -18,7 +18,7 @@ export default function ExploreOverlay() {
             <div className="absolute inset-x-0 bottom-0 h-[70vh] pointer-events-none">
               <div className="relative h-full w-full">
                 <img 
-                  src="/emplify_health_cover_overlay.png" 
+                  src="/methodology/emplify_health_cover_overlay.png" 
                   alt="" 
                   className="absolute bottom-0 left-0 right-0 w-full h-full object-cover object-bottom"
                 />

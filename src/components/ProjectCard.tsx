@@ -22,7 +22,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.logo && (
             <div className="mb-2">
               <img 
-                src={`/Gundersen_Edge_RGB_wht_${project.logo.toUpperCase()}_lockup.png`}
+                src={`/logos/Gundersen_Edge_RGB_wht_${project.logo.toUpperCase()}_lockup.png`}
                 alt={`Edge ${project.logo}`}
                 className="h-10 w-auto filter drop-shadow-[0_10px_30px_rgba(0,0,0,0.45)]"
               />

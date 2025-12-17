@@ -4,10 +4,10 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Link from 'next/link';
 
-const features = [
-  'Define Outcomes & Guiding Principles',
-  'Discovery & Prioritize Solutions',
-  'Execution & Monitoring',
+const tripleAim = [
+  { label: 'Better Health', icon: '♥' },
+  { label: 'Better Care', icon: '✦' },
+  { label: 'Lower Cost', icon: '◆' },
 ];
 
 export default function EdgeEngageBucket() {
@@ -24,7 +24,7 @@ export default function EdgeEngageBucket() {
       className="group relative overflow-hidden"
     >
       {/* Main card container */}
-      <div className="relative p-8 rounded-3xl bg-white/5 border border-[#3AACCF]/30 backdrop-blur-xl hover:bg-white/10 hover:border-[#3AACCF]/50 transition-all duration-500 min-h-[450px] flex flex-col">
+      <div className="relative p-8 rounded-3xl bg-white/5 border border-[#3AACCF]/30 backdrop-blur-xl hover:bg-white/10 hover:border-[#3AACCF]/50 transition-all duration-500 flex flex-col">
         {/* Gradient accent at top */}
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#3AACCF] to-[#007FA3] rounded-t-3xl" />
 
@@ -36,7 +36,7 @@ export default function EdgeEngageBucket() {
           className="mb-6"
         >
           <img
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Gundersen_Edge_RGB_wht_ENGAGE_lockup.png`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logos/Gundersen_Edge_RGB_wht_ENGAGE_lockup.png`}
             alt="Edge Engage"
             className="h-14 md:h-16 w-auto"
           />
@@ -47,58 +47,114 @@ export default function EdgeEngageBucket() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-2xl md:text-3xl font-bold mb-3"
+          className="text-2xl md:text-3xl font-bold mb-4"
         >
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
-            Execution Method
+            Breaking Barriers & Transforming Healthcare
           </span>
         </motion.h3>
 
-        {/* Description */}
+        {/* Mission Statement */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-white/60 mb-6 flex-grow leading-relaxed"
+          className="text-white/70 mb-6 leading-relaxed"
         >
-          A disruptive process to break down current biases, processes, and procedures to{' '}
-          <span className="text-[#A8D4B8] font-medium">reinvent</span>.
-          When the situation needs a breakthrough disruption.
+          Edge Engage is where{' '}
+          <span className="text-[#3AACCF] font-medium">expertise meets opportunity</span>.
+          We bring together resources, connections, and collaborative spirit to transform
+          healthcare innovation from concept to reality.
         </motion.p>
 
-        {/* Key features list */}
+        {/* Triple Aim */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="space-y-3 mb-8"
+          className="flex flex-wrap gap-3 mb-6"
         >
-          {features.map((item, i) => (
+          {tripleAim.map((item, i) => (
             <motion.div
-              key={i}
-              initial={{ opacity: 0, x: -20 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+              key={item.label}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.4, delay: 0.6 + i * 0.1 }}
-              className="flex items-center gap-3"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#3AACCF]/10 border border-[#3AACCF]/30"
             >
-              <div className="w-2 h-2 rounded-full bg-[#3AACCF] flex-shrink-0" />
-              <span className="text-white/80 text-sm">{item}</span>
+              <span className="text-[#3AACCF]">{item.icon}</span>
+              <span className="text-white/80 text-sm font-medium">{item.label}</span>
             </motion.div>
           ))}
         </motion.div>
 
-        {/* CTA Button */}
-        <Link href="/engage-method-v2">
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="w-full py-4 rounded-xl bg-gradient-to-r from-[#3AACCF] to-[#007FA3] text-white font-semibold text-lg shadow-lg shadow-[#3AACCF]/30 hover:shadow-xl hover:shadow-[#3AACCF]/40 transition-all duration-300 flex items-center justify-center gap-2"
+        {/* Scale callout */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+          className="mb-8 p-4 rounded-xl bg-white/5 border border-white/10"
+        >
+          <div className="flex items-center gap-3">
+            <div className="text-3xl font-bold text-[#A8D4B8]">15,000+</div>
+            <div className="text-white/60 text-sm">employees supporting healthcare innovation</div>
+          </div>
+        </motion.div>
+
+        {/* Engage with what's next section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mb-6 p-5 rounded-xl bg-gradient-to-br from-[#3AACCF]/10 to-[#007FA3]/10 border border-[#3AACCF]/20"
+        >
+          <h4 className="text-lg font-semibold text-[#3AACCF] mb-2">
+            Engage with what&apos;s next
+          </h4>
+          <p className="text-white/60 text-sm mb-4">
+            Got an innovative idea that could transform healthcare? We want to hear from you.
+          </p>
+          <a
+            href="mailto:greg@ghsedge.com"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#3AACCF]/20 text-[#3AACCF] hover:bg-[#3AACCF]/30 transition-colors text-sm font-medium"
           >
-            Explore Method
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-          </motion.button>
+            Submit Your Idea
+          </a>
+        </motion.div>
+
+        {/* Execution Method Card - clickable item */}
+        <Link href="/engage-method-v2" className="block">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.6, delay: 0.9 }}
+            whileHover={{ scale: 1.02, x: 4 }}
+            className="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#3AACCF]/40 transition-all duration-300 cursor-pointer group/method"
+          >
+            <div className="flex items-center justify-between">
+              <div>
+                <h5 className="text-white font-semibold mb-1 group-hover/method:text-[#3AACCF] transition-colors">
+                  Execution Method
+                </h5>
+                <p className="text-white/50 text-sm">
+                  Our disruptive process to reinvent healthcare delivery
+                </p>
+              </div>
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#3AACCF]/10 flex items-center justify-center group-hover/method:bg-[#3AACCF]/20 transition-colors">
+                <svg
+                  className="w-5 h-5 text-[#3AACCF] group-hover/method:translate-x-0.5 transition-transform"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </div>
+            </div>
+          </motion.div>
         </Link>
       </div>
 

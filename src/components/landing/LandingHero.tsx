@@ -39,7 +39,7 @@ export default function LandingHero() {
       >
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/cliff_edge.png)` }}
+          style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/backgrounds/cliff_edge.png)` }}
         />
         {/* Gradient overlays for depth and readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/80" />
@@ -59,7 +59,7 @@ export default function LandingHero() {
           className="mb-3 md:mb-8"
         >
           <img
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Gundersen_Edge_RGB_White_large_tagline.png`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logos/Gundersen_Edge_RGB_White_large_tagline.png`}
             alt="GHS Edge - On the Other Side of Possible"
             className="h-20 sm:h-28 md:h-40 lg:h-48 w-auto"
           />

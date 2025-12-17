@@ -29,7 +29,7 @@ export default function EdgeLaunchBucket() {
           className="mb-6"
         >
           <img
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Gundersen_Edge_RGB_wht_LAUNCH_lockup.png`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logos/Gundersen_Edge_RGB_wht_LAUNCH_lockup.png`}
             alt="Edge Launch"
             className="h-14 md:h-16 w-auto"
           />

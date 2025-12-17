@@ -36,7 +36,7 @@ export default function LandingFooter() {
             transition={{ duration: 0.6 }}
           >
             <img
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Gundersen_Edge_RGB_White_large_tagline.png`}
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logos/Gundersen_Edge_RGB_White_large_tagline.png`}
               alt="GHS Edge"
               className="h-16 w-auto mb-4"
             />
