@@ -57,11 +57,6 @@ export default function EdgeEngage() {
     <section className="relative z-20 h-screen flex items-center justify-center overflow-hidden pt-20 pb-8" style={{ backgroundImage: 'url(/network-dark.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="max-w-6xl mx-auto px-6 w-full relative z-10 flex flex-col h-full justify-center">
         <div className="text-center mb-4">
-          <img 
-            src="/Gundersen_Edge_RGB_wht-ENGAGE_lockup.png"
-            alt="Edge Engage"
-            className="h-10 md:h-12 w-auto mx-auto mb-2"
-          />
           <p className="text-base md:text-lg text-gray-300">
             Fostering innovation from within through collaborative ideation
           </p>

@@ -16,7 +16,7 @@ const principles = [
     color: 'from-[#E85A6F] to-[#C41F3E]',
   },
   {
-    title: 'LOSS OF CONTROL',
+    title: 'OPEN TO GIVE UP CONTROL',
     subtitle: 'This is by design.',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -26,7 +26,7 @@ const principles = [
     color: 'from-[#243B53] to-[#1B365D]',
   },
   {
-    title: 'TWO STEPS BACK',
+    title: 'PREPARED TO TAKE TWO STEPS BACK',
     subtitle: 'To get one step forward.',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -36,7 +36,7 @@ const principles = [
     color: 'from-[#3AACCF] to-[#007FA3]',
   },
   {
-    title: 'REAL-TIME ESCALATION',
+    title: 'COMMIT TO REAL-TIME ESCALATION',
     subtitle: 'Honor Commitment.',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -46,7 +46,7 @@ const principles = [
     color: 'from-[#FF9F40] to-[#FF8200]',
   },
   {
-    title: 'CADENCE OF ACCOUNTABILITY',
+    title: 'COMMIT TO A CADENCE OF ACCOUNTABILITY',
     subtitle: 'Showing Up.',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -134,12 +134,9 @@ export default function PrinciplesSection() {
           transition={{ duration: 0.8, delay: 1 }}
           className="text-center mt-16"
         >
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#1B365D] border border-[#2D4A6F]">
-            <svg className="w-5 h-5 text-[#A8D4B8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-            </svg>
-            <span className="text-white/80 font-medium">Leaders Must Act as Champions Through These</span>
-          </div>
+          <p className="text-lg text-white/60 max-w-2xl mx-auto">
+            <span className="text-white/80 font-medium">Leaders must act as champions</span> through these guiding principles
+          </p>
         </motion.div>
       </div>
     </section>

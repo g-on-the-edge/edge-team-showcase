@@ -51,6 +51,29 @@ export default function ProgressiveBuilder({ scrollProgress, activeSection }: Pr
   return (
     <div className="sticky top-0 z-50 bg-[#0F1D2F]/95 backdrop-blur-xl border-b border-[#2D4A6F]">
       <div className="max-w-6xl mx-auto px-4 py-3">
+        {/* Home button - positioned on the left */}
+        <div className="absolute left-4 top-1/2 -translate-y-1/2">
+          <a
+            href="/"
+            className="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all duration-300 group"
+          >
+            <svg
+              className="w-5 h-5 text-white/70 group-hover:text-white transition-colors"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+            <span className="text-sm text-white/70 group-hover:text-white transition-colors hidden sm:inline">
+              Home
+            </span>
+          </a>
+        </div>
+
         {/* Main builder visualization */}
         <div className="flex items-center justify-center gap-1 md:gap-2">
 
