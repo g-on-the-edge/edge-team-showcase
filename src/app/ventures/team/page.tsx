@@ -137,15 +137,14 @@ export default function VenturesTeamPage() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#0F1D2F]/95 backdrop-blur-xl border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4">
           <div className="flex items-center justify-between">
-            {/* Left: Logo and Title */}
+            {/* Left: Logo */}
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-[#20B2A4] flex items-center justify-center text-white font-bold text-sm">
-                EV
-              </div>
-              <div className="hidden sm:block">
-                <p className="text-white font-semibold text-sm md:text-base">Edge Ventures</p>
-                <p className="text-white/50 text-xs">LP Portal</p>
-              </div>
+              <img
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logos/Gundersen_Edge_RGB_wht_VENTURES_lockup.png`}
+                alt="Edge Ventures"
+                className="h-8 md:h-10 w-auto"
+              />
+              <p className="text-white/50 text-xs hidden sm:block">LP Portal</p>
             </div>
 
             {/* Center: Navigation */}
